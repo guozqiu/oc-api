@@ -25,12 +25,20 @@ composer require onecreate/oc-api
 composer create-project topthink/think api  --prefer-dist
 composer require onecreate/oc-api
 ```
-- 如果要使用生成文档 需要在public/static/ 下 安装hadmin
-```
-cd /public/static/
-git clone  https://github.com/liushoukun/hadmin.git
-```
 
-
-## dome & 文档
- [https://github.com/liushoukun/dawn-api-demo](https://github.com/liushoukun/dawn-api-demo)
+- 在扩展配置目录（extra）中增加api_doc.php
+```
+return [
+    '1' => ['name' => 'v1版本接口', 'id' => '1', 'parent' => '0', 'class' => '', 'readme' => ''],
+    '2' => ['name' => 'v2版本接口', 'id' => '2', 'parent' => '0', 'class' => '', 'readme' => ''],
+    '10' => ['name' => '公用接口', 'id' => '10', 'parent' => '1', 'class' => '', 'readme' => '/doc/common/common.md'],
+    //用户接口
+    '20' => ['name' => '用户接口', 'id' => '20', 'parent' => '1', 'readme' => '', 'class' => ''],
+    //用户接口-基础接口
+    '21' => ['name' => '用户接口-基础接口', 'id' => '21', 'parent' => '20', 'readme' => '/doc/user/base.md', 'class' => ''],
+    //用户接口-个人中心
+    '22' => ['name' => '用户接口-个人中心', 'id' => '22', 'parent' => '20', 'readme' => '/doc/user/account.md', 'class' => ''],
+    //众筹项目接口
+    '30' => ['name' => '众筹项目接口', 'id' => '30', 'parent' => '2', 'readme' => '/doc/project/project.md', 'class' => ''],
+];
+```

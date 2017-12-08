@@ -2,4 +2,5 @@
 .gitignore
 .idea
 .idea/vcs.xml
-
+vendor
+composer.lock

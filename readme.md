@@ -17,13 +17,13 @@ thinkphp5编写的restful风格的API，集API请求处理，权限认证，自�
 ## 安装
 - 如果想在你的TP5项目中使用,那么可以直接使用
 ```
-composer require liushoukun/dawn-api
+composer require onecreate/oc-api
 ```
 - 如果是新项目先要创建tp5项目,然后再require
 
 ```
 composer create-project topthink/think api  --prefer-dist
-composer require liushoukun/dawn-api
+composer require onecreate/oc-api
 ```
 - 如果要使用生成文档 需要在public/static/ 下 安装hadmin
 ```

@@ -18,10 +18,10 @@
     <![endif]-->
 
     <link rel="shortcut icon" href="/favicon.ico">
-    <link href="__STATIC__/hadmin/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
-    <link href="__STATIC__/hadmin/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
-    <link href="__STATIC__/hadmin/css/animate.css" rel="stylesheet">
-    <link href="__STATIC__/hadmin/css/style.css?v=4.1.0" rel="stylesheet">
+    <link href="./css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="./css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="./css/animate.css" rel="stylesheet">
+    <link href="./css/style.css?v=4.1.0" rel="stylesheet">
 </head>
 
 <body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
@@ -85,19 +85,19 @@
 </div>
 
 <!-- 全局js -->
-<script src="__STATIC__/hadmin/js/jquery.min.js?v=2.1.4"></script>
-<script src="__STATIC__/hadmin/js/bootstrap.min.js?v=3.3.6"></script>
-<script src="__STATIC__/hadmin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
-<script src="__STATIC__/hadmin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-<script src="__STATIC__/hadmin/js/plugins/layer/layer.min.js"></script>
+<script src="./js/jquery.min.js?v=2.1.4"></script>
+<script src="./js/bootstrap.min.js?v=3.3.6"></script>
+<script src="./js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="./js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="./js/plugins/layer/layer.min.js"></script>
 
 
 <!-- 自定义js -->
-<script src="__STATIC__/hadmin/js/hAdmin.js?v=4.1.0"></script>
-<script type="text/javascript" src="__STATIC__/hadmin/js/index.js"></script>
+<script src="./js/hAdmin.js?v=4.1.0"></script>
+<script type="text/javascript" src="./js/index.js"></script>
 
 <!-- 第三方插件 -->
-<script src="__STATIC__/hadmin/js/plugins/pace/pace.min.js"></script>
+<script src="./js/plugins/pace/pace.min.js"></script>
 
 </body>
 

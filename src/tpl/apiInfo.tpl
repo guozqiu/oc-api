@@ -10,12 +10,12 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link href="./api/oc_api/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
-    <link href="./api/oc_api/css/font-awesome.css?v=4.4.0" rel="stylesheet">
-    <link href="./api/oc_api/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
-    <link href="./api/oc_api/css/animate.css" rel="stylesheet">
+    <link href="{$oc_api_root}api/oc_api//css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="{$oc_api_root}api/oc_api//css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="{$oc_api_root}api/oc_api//css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <link href="{$oc_api_root}api/oc_api//css/animate.css" rel="stylesheet">
     <!--markdown-->
-    <link rel="stylesheet" href="./api/oc_api/css/plugins/editormd/editormd.preview.css"/>
+    <link rel="stylesheet" href="{$oc_api_root}api/oc_api//css/plugins/editormd/editormd.preview.css"/>
     <!--markdown-->
     <style>
         .markdown p img {
@@ -23,7 +23,7 @@
         }
     </style>
 
-    <link href="./api/oc_api/css/style.css?v=4.1.0" rel="stylesheet">
+    <link href="{$oc_api_root}api/oc_api//css/style.css?v=4.1.0" rel="stylesheet">
 
 
 </head>
@@ -296,28 +296,28 @@
 </div>
 
 <!-- 全局js -->
-<script src="./api/oc_api/js/jquery.min.js?v=2.1.4"></script>
-<script src="./api/oc_api/js/bootstrap.min.js?v=3.3.6"></script>
-<script src="./api/oc_api/js/plugins/metisMenu/jquery.metisMenu.js"></script>
-<script src="./api/oc_api/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-<script src="./api/oc_api/js/plugins/layer/layer.min.js"></script>
+<script src="{$oc_api_root}api/oc_api//js/jquery.min.js?v=2.1.4"></script>
+<script src="{$oc_api_root}api/oc_api//js/bootstrap.min.js?v=3.3.6"></script>
+<script src="{$oc_api_root}api/oc_api//js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="{$oc_api_root}api/oc_api//js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="{$oc_api_root}api/oc_api//js/plugins/layer/layer.min.js"></script>
 
 
 <!-- Bootstrap table -->
-<script src="./api/oc_api/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
-<script src="./api/oc_api/js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
-<script src="./api/oc_api/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="{$oc_api_root}api/oc_api//js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="{$oc_api_root}api/oc_api//js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+<script src="{$oc_api_root}api/oc_api//js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
 
 
 <!-- editormd -->
-<script src="./api/oc_api/js/plugins/editormd/lib/marked.min.js"></script>
-<script src="./api/oc_api/js/plugins/editormd/lib/prettify.min.js"></script>
-<script src="./api/oc_api/js/plugins/editormd/lib/raphael.min.js"></script>
-<script src="./api/oc_api/js/plugins/editormd/lib/underscore.min.js"></script>
-<script src="./api/oc_api/js/plugins/editormd/lib/sequence-diagram.min.js"></script>
-<script src="./api/oc_api/js/plugins/editormd/lib/flowchart.min.js"></script>
-<script src="./api/oc_api/js/plugins/editormd/lib/jquery.flowchart.min.js"></script>
-<script src="./api/oc_api/js/plugins/editormd/editormd.js"></script>
+<script src="{$oc_api_root}api/oc_api//js/plugins/editormd/lib/marked.min.js"></script>
+<script src="{$oc_api_root}api/oc_api//js/plugins/editormd/lib/prettify.min.js"></script>
+<script src="{$oc_api_root}api/oc_api//js/plugins/editormd/lib/raphael.min.js"></script>
+<script src="{$oc_api_root}api/oc_api//js/plugins/editormd/lib/underscore.min.js"></script>
+<script src="{$oc_api_root}api/oc_api//js/plugins/editormd/lib/sequence-diagram.min.js"></script>
+<script src="{$oc_api_root}api/oc_api//js/plugins/editormd/lib/flowchart.min.js"></script>
+<script src="{$oc_api_root}api/oc_api//js/plugins/editormd/lib/jquery.flowchart.min.js"></script>
+<script src="{$oc_api_root}api/oc_api//js/plugins/editormd/editormd.js"></script>
 
 <script>
     //获取class md
@@ -411,11 +411,11 @@
 
 
 <!-- 自定义js -->
-<script src="./api/oc_api/js/hAdmin.js?v=4.1.0"></script>
-<script type="text/javascript" src="./api/oc_api/js/index.js"></script>
+<script src="{$oc_api_root}api/oc_api//js/hAdmin.js?v=4.1.0"></script>
+<script type="text/javascript" src="{$oc_api_root}api/oc_api//js/index.js"></script>
 
 <!-- 第三方插件 -->
-<script src="./api/oc_api/js/plugins/pace/pace.min.js"></script>
+<script src="{$oc_api_root}api/oc_api//js/plugins/pace/pace.min.js"></script>
 
 
 </body>

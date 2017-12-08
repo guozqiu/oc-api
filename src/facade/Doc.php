@@ -21,6 +21,16 @@ abstract class Doc
     public function __construct()
     {
         Config::set('app_trace',false);
+        $request = Request::instance();
+        $root    = $request->root();
+        $root    = str_replace('/index.php', '', $root);
+        $arr = explode('/',$root);
+        $oc = '';
+        foreach($arr as $a){
+            if($a !=='') $oc.='../';
+        }
+        define('OC_API_RESOURCE',$oc);
+
         $root_path = $_SERVER['DOCUMENT_ROOT']."/";
         $current_path = dirname(__FILE__)."/";
         $path = $root_path.'api/oc_api';
@@ -111,7 +121,7 @@ abstract class Doc
         $mainHtmlPath = (Config::get('mainHtmlPath')) ? Config::get('mainHtmlPath') : $mainHtmlPath;
         $apiList = self::getApiDocList();
         $menu = (empty($apiList)) ? '' : self::buildMenuHtml(Tree::makeTree($apiList));
-        return view($mainHtmlPath, ['menu' => $menu, 'titleDoc' => $this->titleDoc]);
+        return view($mainHtmlPath, ['menu' => $menu, 'titleDoc' => $this->titleDoc,'oc_api_root'=>OC_API_RESOURCE]);
     }
 
     /**
@@ -137,7 +147,7 @@ abstract class Doc
             if (!isset($apiOne['readme']) || empty($apiOne['readme'])) return false;
             $apiMarkdownHtmlPath = dirname(__FILE__) . DS . '..' . DS . 'tpl' . DS . 'apiMarkdown.tpl';
             $apiMarkdownHtmlPath = (Config::get('apiMarkdownHtmlPath')) ? Config::get('apiMarkdownHtmlPath') : $apiMarkdownHtmlPath;
-            return view($apiMarkdownHtmlPath, ['menu' => $menu,'classDoc' => $apiOne, 'titleDoc' => $this->titleDoc]);
+            return view($apiMarkdownHtmlPath, ['menu' => $menu,'classDoc' => $apiOne, 'titleDoc' => $this->titleDoc,'oc_api_root'=>OC_API_RESOURCE]);
         }
         //获取请求列表文档
         $methodDoc = self::getMethodListDoc($className);
@@ -149,7 +159,7 @@ abstract class Doc
         $fieldMaps['data'] = self::$dataFieldMaps;
         $fieldMaps['type'] = self::$typeMaps;
 
-        $data = ['menu' => $menu, 'restToMethod' => self::$restToMethod, 'classDoc' => $classDoc, 'methodDoc' => $methodDoc, 'fieldMaps' => $fieldMaps, 'titleDoc' => $this->titleDoc];
+        $data = ['menu' => $menu, 'restToMethod' => self::$restToMethod, 'classDoc' => $classDoc, 'methodDoc' => $methodDoc, 'fieldMaps' => $fieldMaps, 'titleDoc' => $this->titleDoc,'oc_api_root'=>OC_API_RESOURCE];
         return view($apiInfoHtmlPath,$data);
     }
 

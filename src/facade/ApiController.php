@@ -1,20 +1,20 @@
 <?php
 // +----------------------------------------------------------------------
-// | When work is a pleasure, life is a joy!
+// | Do something, and change something!
 // +----------------------------------------------------------------------
-// |  User: ShouKun Liu  |  Email:24147287@qq.com  | Time:2017/3/9 11:39
+// |  User: guozqiu  |  Email:24147287@qq.com  | Time:2017/3/9 11:39
 // +----------------------------------------------------------------------
 // | TITLE: API基础
 // +----------------------------------------------------------------------
-namespace DawnApi\facade;
+namespace OcApi\facade;
 
 use think\Config;
 use  think\App;
 use think\Request;
 use think\Exception;
-use DawnApi\contract\AuthContract;
+use OcApi\contract\AuthContract;
 use think\exception\HttpResponseException;
-use DawnApi\exception\UnauthorizedException;
+use OcApi\exception\UnauthorizedException;
 
 
 abstract class ApiController
@@ -203,7 +203,7 @@ abstract class ApiController
      */
     private static function _auth()
     {
-        $baseAuth = Factory::getInstance(\DawnApi\auth\BaseAuth::class);
+        $baseAuth = Factory::getInstance(\OcApi\auth\BaseAuth::class);
         try {
             return $baseAuth->auth(self::$app['auth']);
         } catch (UnauthorizedException $e) {

@@ -1,16 +1,16 @@
 {
-  "name": "liushoukun/dawn-api",
+  "name": "onecreate/oc-api",
   "description": "A RESTful API package",
   "license": "Apache-2.0",
   "authors": [
     {
-      "name": "liushoukun",
-      "email": "liushoukun66@gmail.com"
+      "name": "guozqiu",
+      "email": "guozqiu@gmail.com"
     }
   ],
   "autoload": {
     "psr-4": {
-      "DawnApi\\": "src/"
+      "OcApi\\": "src/"
     }
   },
   "require": {

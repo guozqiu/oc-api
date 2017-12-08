@@ -1,19 +1,19 @@
 <?php
 // +----------------------------------------------------------------------
-// | When work is a pleasure, life is a joy!
+// | Do something, and change something!
 // +----------------------------------------------------------------------
-// | User: ShouKun Liu  |  Email:24147287@qq.com  | Time:2017/9/26 16:18
+// | User: guozqiu  |  Email:24147287@qq.com  | Time:2017/9/26 16:18
 // +----------------------------------------------------------------------
-// | TITLE: this to do?
+// | TITLE: just do it!
 // +----------------------------------------------------------------------
-namespace DawnApi\route;
+namespace OcApi\route;
 
-use  think\App;
+use think\App;
 use think\Route;
 use think\Request;
-use  DawnApi\controller\Wiki;
+use  OcApi\controller\Wiki;
 
-class DawnRoute
+class OcRoute
 {
 
     public static function wiki()

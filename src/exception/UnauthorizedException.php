@@ -1,12 +1,12 @@
 <?php
 // +----------------------------------------------------------------------
-// | When work is a pleasure, life is a joy!
+// | Do something, and change something!
 // +----------------------------------------------------------------------
-// | | User: ShouKun Liu  |  Email:24147287@qq.com  | Time:2017/3/13 12:00
+// | | User: guozqiu  |  Email:24147287@qq.com  | Time:2017/3/13 12:00
 // +----------------------------------------------------------------------
 // | TITLE: 授权失败
 // +----------------------------------------------------------------------
-namespace DawnApi\exception;
+namespace OcApi\exception;
 
 
 use think\Exception;

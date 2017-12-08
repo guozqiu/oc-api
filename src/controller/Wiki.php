@@ -1,18 +1,18 @@
 <?php
 // +----------------------------------------------------------------------
-// | When work is a pleasure, life is a joy!
+// | Do something, and change something!
 // +----------------------------------------------------------------------
-// | User: ShouKun Liu  |  Email:24147287@qq.com  | Time:2017/3/26 14:51
+// | User: guozqiu  |  Email:24147287@qq.com  | Time:2017/3/26 14:51
 // +----------------------------------------------------------------------
 // | TITLE: 文档显示
 // +----------------------------------------------------------------------
 
-namespace DawnApi\controller;
+namespace OcApi\controller;
 
-use DawnApi\facade\Doc;
+use OcApi\facade\Doc;
 
 class Wiki extends Doc
 {
-    public $titleDoc = 'DAWN-API';
+    public $titleDoc = 'OneWork-API';
 
 }

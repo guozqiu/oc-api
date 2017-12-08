@@ -1,17 +1,17 @@
 <?php
 // +----------------------------------------------------------------------
-// | When work is a pleasure, life is a joy!
+// | Do something, and change something!
 // +----------------------------------------------------------------------
-// |  User: ShouKun Liu  |  Email:24147287@qq.com  | Time:2017/3/9 15:10
+// |  User: guozqiu  |  Email:24147287@qq.com  | Time:2017/3/9 15:10
 // +----------------------------------------------------------------------
-// | TITLE: this to do?
+// | TITLE: just do it!
 // +----------------------------------------------------------------------
 
 
-namespace DawnApi\auth;
+namespace OcApi\auth;
 
 
-use DawnApi\exception\UnauthorizedException;
+use OcApi\exception\UnauthorizedException;
 use think\Exception;
 use think\Request;
 

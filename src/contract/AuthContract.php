@@ -1,12 +1,12 @@
 <?php
 // +----------------------------------------------------------------------
-// | When work is a pleasure, life is a joy!
+// | Do something, and change something!
 // +----------------------------------------------------------------------
-// |  User: ShouKun Liu  |  Email:24147287@qq.com  | Time:2017/3/9 11:28
+// |  User: guozqiu  |  Email:24147287@qq.com  | Time:2017/3/9 11:28
 // +----------------------------------------------------------------------
 // | TITLE: 授权接口
 // +----------------------------------------------------------------------
-namespace DawnApi\contract;
+namespace OcApi\contract;
 
 use think\Request;
 

@@ -1,12 +1,12 @@
 <?php
 // +----------------------------------------------------------------------
-// | When work is a pleasure, life is a joy!
+// | Do something, and change something!
 // +----------------------------------------------------------------------
-// | User: ShouKun Liu  |  Email:24147287@qq.com  | Time:2017/3/11 10:56
+// | User: guozqiu  |  Email:24147287@qq.com  | Time:2017/3/11 10:56
 // +----------------------------------------------------------------------
 // | TITLE: 发送响应
 // +----------------------------------------------------------------------
-namespace DawnApi\facade;
+namespace OcApi\facade;
 
 use think\Response;
 use think\response\Redirect;

@@ -22,6 +22,49 @@
     <link href="__STATIC__/hadmin/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
     <link href="__STATIC__/hadmin/css/animate.css" rel="stylesheet">
     <link href="__STATIC__/hadmin/css/style.css?v=4.1.0" rel="stylesheet">
+    <style>
+        /* Table Head */
+        #markdown-class table {
+            width: 100%;
+        }
+        #markdown-class table thead th {
+            background-color: rgb(81, 130, 187);
+            color: #fff;
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: rgb(81, 130, 187);
+        }
+
+        /* Column Style */
+        #markdown-class table td {
+            color: #000;
+        }
+        /* Heading and Column Style */
+        #markdown-class table tr td {
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(81, 130, 187);
+        }
+
+        /* Padding and font style */
+        #markdown-class table td, #markdown-class table th {
+            padding: 5px 10px;
+            font-size: 12px;
+            font-family: Verdana;
+            font-weight: bold;
+        }
+        #markdown-class h1{
+            font-weight: 900;
+        }
+        #markdown-class h2{
+            font-weight: 500;
+        }
+
+        .navbar-default .nav > li > a span.act{
+            color:white;
+        }
+    </style>
 </head>
 
 <body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
@@ -147,7 +190,26 @@
 
 <!-- 第三方插件 -->
 <script src="__STATIC__/hadmin/js/plugins/pace/pace.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.dk + li').find('a').each(function () {
+      $href = $(this).attr('href')
+      if(location.href.indexOf($href)>0){
+        $(this).find('span').addClass('act')
+        var uls = $(this).parents('ul.nav-second-level')
+        for(var i=uls.length;i>0;i--){
+          $ul = $(uls[i-1]);
+          if(i == uls.length){
+            $ul.parent().addClass('active')
+          }
 
+          $ul.attr('aria-expanded',true)
+          $ul.addClass('in')
+        }
+      }
+    })
+  })
+</script>
 </body>
 
 </html>

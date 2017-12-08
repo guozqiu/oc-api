@@ -21,8 +21,34 @@ abstract class Doc
     public function __construct()
     {
         Config::set('app_trace',false);
+        $root_path = $_SERVER['DOCUMENT_ROOT']."/";
+        $current_path = dirname(__FILE__)."/";
+        $path = $root_path.'api/oc_api';
+        if(!is_dir($path)){
+            //第三个参数是“true”表示能创建多级目录，iconv防止中文目录乱码
+            $res=mkdir(iconv("UTF-8", "GBK", $path),0777,true);
+            if($res){
+                $this->copy_dir($current_path.'../tpl',$path);
+            }
+        }
     }
 
+    public function copy_dir($src,$dst) {
+        $dir = opendir($src);
+        @mkdir($dst);
+        while(false !== ( $file = readdir($dir)) ) {
+            if (( $file != '.' ) && ( $file != '..' )) {
+                if ( is_dir($src . '/' . $file) ) {
+                    $this->copy_dir($src . '/' . $file,$dst . '/' . $file);
+                    continue;
+                }
+                else {
+                    copy($src . '/' . $file,$dst . '/' . $file);
+                }
+            }
+        }
+        closedir($dir);
+    }
 
     public $titleDoc = 'API文档';
     /**

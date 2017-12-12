@@ -22,14 +22,7 @@ abstract class Doc
     {
         Config::set('app_trace',false);
         $request = Request::instance();
-        $root    = $request->root();
-        $root    = str_replace('/index.php', '', $root);
-        $arr = explode('/',$root);
-        $oc = '';
-        foreach($arr as $a){
-            if($a !=='') $oc.='../';
-        }
-        define('OC_API_RESOURCE',$oc);
+        define('OC_API_RESOURCE',$request->domain().'/');
 
         $root_path = $_SERVER['DOCUMENT_ROOT']."/";
         $current_path = dirname(__FILE__)."/";
